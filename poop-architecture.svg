@@ -118,4 +118,4 @@ Creator Registry & Trust Graph — Public index of issuers, attestations, and re
 Badge & Embeds — Visible badge (PNG + QR) or metadata entry that travels with the file to make verification discoverable.
 
 Verification Layer — Browser extension, web app, or CLI that reads the embedded reference, fetches the manifest (IPFS and/or on-chain lookup), re-hashes local content, verifies signatures, and reports status to users.
---!>
+-->
