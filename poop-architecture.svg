@@ -101,3 +101,21 @@
   <!-- Footer note -->
   <text class="note" x="40" y="680">Diagram: PoOP architecture (v0.1) — Creator -> CLI/SDK -> manifests stored (IPFS) -> anchored (smart contract) -> verified (extension/web/cli). Optional registry & trust graph for reputation. Badge/sidecar embeds for UX.</text>
 </svg>
+
+<!--
+Quick explanation
+
+Creator Device — Camera, editor, or authoring app where content is produced. Holds the issuer’s local key (software or hardware).
+
+PoOP CLI / SDK — Hashes content (canonicalization rules), creates signed manifest (PoOP token), writes sidecar/metadata, and optionally generates a visible badge with a QR linking to the manifest.
+
+Distributed Storage — IPFS/Filecoin or similar stores manifest JSON and optionally original files, returning a CID.
+
+PoOP Registry (Smart Contract) — Anchors the manifest CID and short proof on-chain (token id hash, issuer address, timestamp, tx), allowing immutable audit.
+
+Creator Registry & Trust Graph — Public index of issuers, attestations, and reputation layers (optional, community-managed).
+
+Badge & Embeds — Visible badge (PNG + QR) or metadata entry that travels with the file to make verification discoverable.
+
+Verification Layer — Browser extension, web app, or CLI that reads the embedded reference, fetches the manifest (IPFS and/or on-chain lookup), re-hashes local content, verifies signatures, and reports status to users.
+--!>
